@@ -389,7 +389,7 @@ export default function ComplexNavbar() {
         {/*    <i className="fab fa-github text-xl leading-none" aria-hidden="true"></i>*/}
         {/*  </Button>*/}
         {/*</a>*/}
-        <a href="/">
+        <a href="/about">
           <Button color="dark">Request A Demo</Button>
         </a>
       </div>

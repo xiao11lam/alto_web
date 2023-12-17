@@ -39,7 +39,7 @@ export function HeroPresentation() {
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
               <a href="/about">
                 <Button color="dark" className="flex items-center">
-                  Get Started
+                  Request A Demo
                 </Button>
               </a>
             </div>
