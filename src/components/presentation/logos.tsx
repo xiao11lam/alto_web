@@ -34,6 +34,8 @@ export function LogoSectionOne() {
         </div>
       </div>
     </section>
+
+
   );
 }
 

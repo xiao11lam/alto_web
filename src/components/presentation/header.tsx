@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Button,
+  Button, Card, CardBody,
   Typography,
 } from "@material-tailwind/react";
 import ThemeProvider from "../theme-provider";
@@ -23,7 +23,7 @@ export function HeroPresentation() {
                 variant="small"
                 className="flex items-center font-bold uppercase"
               >
-                Alto Health
+                AI tools for the cancer care pathway
               </Typography>
             </div>
             <Typography
@@ -49,8 +49,13 @@ export function HeroPresentation() {
           <img src="sentiment_1.png" alt="components" className="absolute -top-0 right-20 w-1/2 " />
         </div>
       </header>
+
+
     </ThemeProvider>
   );
 }
 
 export default HeroPresentation;
+
+
+
