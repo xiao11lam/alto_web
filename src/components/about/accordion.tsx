@@ -33,7 +33,7 @@ export default function Example() {
     <Fragment>
       <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
         <AccordionHeader onClick={() => handleOpen(1)}>
-          What is AstroLaunch UI React?
+          What is Alto Health React?
         </AccordionHeader>
         <AccordionBody className="text-blue-gray-800">
           We&apos;re not always in the position that we want to be at.
@@ -44,7 +44,7 @@ export default function Example() {
       </Accordion>
       <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
         <AccordionHeader onClick={() => handleOpen(2)}>
-          How to use AstroLaunch UI React?
+          How to use Alto Health React?
         </AccordionHeader>
         <AccordionBody className="text-blue-gray-800">
           We&apos;re not always in the position that we want to be at.
@@ -55,7 +55,7 @@ export default function Example() {
       </Accordion>
       <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
         <AccordionHeader onClick={() => handleOpen(3)}>
-          What can I do with AstroLaunch UI React?
+          What can I do with Alto Health React?
         </AccordionHeader>
         <AccordionBody className="text-blue-gray-800">
           We&apos;re not always in the position that we want to be at.

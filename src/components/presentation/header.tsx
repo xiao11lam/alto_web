@@ -19,17 +19,11 @@ export function HeroPresentation() {
           <div className="text-center lg:text-left pt-32">
             <div className="mb-8 inline-flex items-center">
               <Typography
-                variant="small"
-                className="mr-3 py-0.5 px-3 font-bold text-dark uppercase border-r border-dark"
-              >
-                New
-              </Typography>
-              <Typography
                 color="dark"
                 variant="small"
                 className="flex items-center font-bold uppercase"
               >
-                Astro Starter Template
+                Alto Health
               </Typography>
             </div>
             <Typography
@@ -37,10 +31,10 @@ export function HeroPresentation() {
               color="blue-gray"
               className="mb-8 lg:mr-32 leading-tight font-black"
             >
-              The perfect foundation for your <span className="text-blue">Astro Project</span>
+              Simplifying patient <span className="text-blue">engagement and assessment</span>
             </Typography>
             <Typography variant="lead" color="blue-gray" className="lg:pr-32">
-              AstroLaunch UI is a free template designed to be both lightweight and feature-rich. It comes packed with everything you need to get your Online Store ready in no time.
+              Alto is the easy-to-use platform that streamlines patient engagement and assessment.
             </Typography>
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
               <a href="#pricing">
@@ -51,9 +45,9 @@ export function HeroPresentation() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex">
-          <img src="header.png" alt="components" className="absolute -top-10 right-0 w-1/2" />
-        </div>
+        {/*<div className="hidden lg:flex">*/}
+        {/*  <img src="header.png" alt="components" className="absolute -top-10 right-0 w-1/2" />*/}
+        {/*</div>*/}
       </header>
     </ThemeProvider>
   );

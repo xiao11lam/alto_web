@@ -15,7 +15,7 @@ export function CodePresentation() {
               color="blue"
               className="font-bold text-lg mb-5"
             >
-              Powerful Ecommerce UI Tool
+              Alto Healthcare
             </Typography>
 
             <Typography
@@ -23,7 +23,7 @@ export function CodePresentation() {
               color="blue-gray"
               className="mb-8 leading-tight lg:mx-52"
             >
-              AstroLaunch UI is the starting point for your next project!
+              Alto Health is the starting point for your next project!
             </Typography>
             <Typography color="blue-gray" className="mb-8 lg:mx-80">
               Don’t spend hours reinventing the wheel! Our UI tool comes packed with everything you need for you Online Store.
