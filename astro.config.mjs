@@ -9,6 +9,10 @@ const isProd = process.env.NODE_ENV === "production";
 
 // https://astro.build/config
 export default defineConfig({
+  server: {
+    port: 3000,
+    // host: true,
+  },
   integrations: [react(), tailwind()],
   site: "https://creativetimofficial.github.io",
   base: "/",
