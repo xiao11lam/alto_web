@@ -34,7 +34,7 @@ export function HeroPresentation() {
               Simplifying patient <span className="text-blue">engagement and assessment</span>
             </Typography>
             <Typography variant="lead" color="blue-gray" className="lg:pr-32">
-              Alto is the easy-to-use platform that streamlines patient engagement and assessment.
+              Alto is the easy-to-use platform that streamlines patient engagement and assessment <span className="text-blue">through voice interaction</span>.
             </Typography>
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
               <a href="#pricing">
@@ -45,9 +45,9 @@ export function HeroPresentation() {
             </div>
           </div>
         </div>
-        {/*<div className="hidden lg:flex">*/}
-        {/*  <img src="header.png" alt="components" className="absolute -top-10 right-0 w-1/2" />*/}
-        {/*</div>*/}
+        <div className="hidden lg:flex">
+          <img src="sentiment_1.png" alt="components" className="absolute -top-0 right-20 w-1/2 " />
+        </div>
       </header>
     </ThemeProvider>
   );

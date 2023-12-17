@@ -180,17 +180,17 @@ function AccountListMenu() {
 // nav list menu
 const navListMenuItems = [
   {
-    title: "About Us",
-    href: "/astro-launch-ui/about"
+    title: "Alto Voice",
+    href: "/"
   },
-  {
-    title: "Landing Page",
-    href: "/astro-launch-ui/landing"
-  },
-  {
-    title: "404",
-    href: "/astro-launch-ui/404"
-  },
+  // {
+  //   title: "Landing Page",
+  //   href: "/astro-launch-ui/landing"
+  // },
+  // {
+  //   title: "404",
+  //   href: "/astro-launch-ui/404"
+  // },
 ];
  
 function NavListMenu() {
@@ -220,7 +220,7 @@ function NavListMenu() {
               {...triggers}
               className="hidden items-center gap-2 text-blue-gray-900 lg:flex lg:rounded-full"
             >
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
+              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Solutions{" "}
               <ChevronDownIcon
                 strokeWidth={2}
                 className={`h-3 w-3 transition-transform ${
@@ -252,7 +252,7 @@ function NavListMenu() {
 // nav list component
 const navListItems = [
   {
-    label: "Docs",
+    label: "Research",
     icon: CodeBracketSquareIcon,
   },
 ];
@@ -261,13 +261,13 @@ function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
       <NavListMenu />
-      <AccountListMenu />
+      {/*<AccountListMenu />*/}
 
       {navListItems.map(({ label, icon }, key) => (
         <Typography
           key={label}
           as="a"
-          href="https://www.creative-tim.com/learning-lab/astro/quick-start/astro-launch-ui/"
+          href="/"
           variant="small"
           color="blue-gray"
           className="font-normal"
@@ -329,18 +329,18 @@ export default function ComplexNavbar() {
             <path d="M73.3751 20.0498C71.9818 20.0498 70.8477 21.2667 70.8477 22.761C70.8477 24.2761 71.9818 25.5109 73.3751 25.5109C74.7489 25.5109 75.8663 24.2791 75.8663 22.761C75.8691 21.2667 74.7489 20.0498 73.3751 20.0498Z" fill="#24335F"/>
           </svg>
         </Typography>
-        {/*<div className="hidden lg:flex ml-auto">*/}
-        {/*  <NavList />*/}
-        {/*</div>*/}
-        {/*<IconButton*/}
-        {/*  size="sm"*/}
-        {/*  color="blue-gray"*/}
-        {/*  variant="text"*/}
-        {/*  onClick={toggleIsNavOpen}*/}
-        {/*  className="ml-auto mr-2 lg:hidden"*/}
-        {/*>*/}
-        {/*  <Bars2Icon className="h-6 w-6" />*/}
-        {/*</IconButton>*/}
+        <div className="hidden lg:flex ml-auto">
+          <NavList />
+        </div>
+        <IconButton
+          size="sm"
+          color="blue-gray"
+          variant="text"
+          onClick={toggleIsNavOpen}
+          className="ml-auto mr-2 lg:hidden"
+        >
+          <Bars2Icon className="h-6 w-6" />
+        </IconButton>
         {/*<a href="https://discord.gg/WCvQWMwT" target="_blank">*/}
         {/*  <Button size="sm" color="dark" variant="text">*/}
         {/*    <i className="fab fa-discord text-lg leading-none" aria-hidden="true"></i>*/}
@@ -351,13 +351,13 @@ export default function ComplexNavbar() {
         {/*    <i className="fab fa-github text-xl leading-none" aria-hidden="true"></i>*/}
         {/*  </Button>*/}
         {/*</a>*/}
-        {/*<a href="/astro-launch-ui/#examplePages">*/}
-        {/*  <Button color="dark">Get started</Button>*/}
-        {/*</a>*/}
+        <a href="/">
+          <Button color="dark">Request A Demo</Button>
+        </a>
       </div>
-      {/*<Collapse open={isNavOpen} className="overflow-scroll">*/}
-      {/*  <NavList />*/}
-      {/*</Collapse>*/}
+      <Collapse open={isNavOpen} className="overflow-scroll">
+        <NavList />
+      </Collapse>
     </Navbar>
   );
 }

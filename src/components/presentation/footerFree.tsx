@@ -109,15 +109,15 @@ export function Footer() {
             {/*<Typography className="text-md mt-0 mb-2 font-normal !text-gray-600">*/}
             {/*  Easy to use for Tailwind CSS and Material Design.*/}
             {/*</Typography>*/}
-            <div className="mt-6">
-              {SOCIAL_MEDIA.map(({ icon, link }, key) => (
-                <a key={key} href={link} target="_blank" rel="noreferrer">
-                  <i
-                    className={`${icon} font-xl align-center mr-2 inline-block items-center justify-center rounded-full border-[1.5px] border-blue-gray-50 p-3 text-center text-primary outline-none focus:outline-none`}
-                  />
-                </a>
-              ))}
-            </div>
+            {/*<div className="mt-6">*/}
+            {/*  {SOCIAL_MEDIA.map(({ icon, link }, key) => (*/}
+            {/*    <a key={key} href={link} target="_blank" rel="noreferrer">*/}
+            {/*      <i*/}
+            {/*        className={`${icon} font-xl align-center mr-2 inline-block items-center justify-center rounded-full border-[1.5px] border-blue-gray-50 p-3 text-center text-primary outline-none focus:outline-none`}*/}
+            {/*      />*/}
+            {/*    </a>*/}
+            {/*  ))}*/}
+            {/*</div>*/}
           </div>
           {/*<div className="ml-auto w-full px-4 md:w-7/12">*/}
           {/*  <div className="items-top mb-6 flex flex-wrap">*/}
@@ -220,7 +220,7 @@ export function Footer() {
             <div className="text-md mt-2 py-1 font-normal text-gray-600">
               Copyright &copy; {YEAR}{" "}
               <a href="/" className="text-inherit transition-all">
-                Alto Health
+                Alto Health: The Chq Building, Custom House Quay, North Dock, Dublin
               </a>{" "}
               {/*by{" "}*/}
               {/*<a*/}
