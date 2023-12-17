@@ -112,7 +112,7 @@ function ProfileMenu() {
 // account pages menu
 const accountItems = [
   {
-    title: "Login",
+    title: "About Us",
     href: "/astro-launch-ui/login"
   },
   {
@@ -256,7 +256,15 @@ const navListItems = [
     icon: CodeBracketSquareIcon,
   },
 ];
- 
+
+
+const navAboutItems = [
+  {
+    label: "About",
+    icon: LifebuoyIcon,
+  },
+];
+
 function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
@@ -276,12 +284,41 @@ function NavList() {
             {React.createElement(icon, { className: "h-[18px] w-[18px]" })}{" "}
             {label}
           </MenuItem>
+
+
         </Typography>
+
+
+
       ))}
+
+
+      {navAboutItems.map(({ label, icon }, key) => (
+          <Typography
+              key={label}
+              as="a"
+              href="/about"
+              variant="small"
+              color="blue-gray"
+              className="font-normal"
+          >
+            <MenuItem className="flex items-center gap-2 lg:rounded-full">
+              {React.createElement(icon, { className: "h-[18px] w-[18px]" })}{" "}
+              {label}
+            </MenuItem>
+
+          </Typography>
+
+      ))}
+
+
     </ul>
   );
 }
- 
+
+
+
+
 export default function ComplexNavbar() {
   const [isNavOpen, setIsNavOpen] = React.useState(false);
   const [shouldShowBorder, setShouldShowBorder] = React.useState(false);
@@ -341,6 +378,7 @@ export default function ComplexNavbar() {
         >
           <Bars2Icon className="h-6 w-6" />
         </IconButton>
+
         {/*<a href="https://discord.gg/WCvQWMwT" target="_blank">*/}
         {/*  <Button size="sm" color="dark" variant="text">*/}
         {/*    <i className="fab fa-discord text-lg leading-none" aria-hidden="true"></i>*/}

@@ -24,7 +24,7 @@ export function AstroSection() {
             <Typography variant="lead" color="white">
               Reducing manual administration, maximising clinical impact, and making patients happier and healthier.
             </Typography>
-            <a href="/">
+            <a href="/about">
               <Button color="white" size="sm" variant="outlined" className="flex items-center mt-12">
                 Request A Demo
               </Button>

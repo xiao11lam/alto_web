@@ -37,7 +37,7 @@ export function HeroPresentation() {
               Alto is the easy-to-use platform that streamlines patient engagement and assessment <span className="text-blue">through voice interaction</span>.
             </Typography>
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
-              <a href="#pricing">
+              <a href="/about">
                 <Button color="dark" className="flex items-center">
                   Get Started
                 </Button>

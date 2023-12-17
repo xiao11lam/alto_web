@@ -4,6 +4,7 @@ import {
   IconButton,
   Typography,
 } from "@material-tailwind/react";
+import React from "react";
 
 interface TeamCardPropsType {
   img: string;
@@ -31,46 +32,51 @@ function TeamCard({ img, name, title, desc }: TeamCardPropsType) {
       <Typography color="gray" className="mb-4 font-normal">
         {desc}
       </Typography>
-      <div className="flex items-center">
-        <IconButton variant="text" color="light-blue">
-          <i className="fa-brands fa-twitter text-lg not-italic" />
-        </IconButton>
-        <IconButton variant="text" color="blue">
-          <i className="fa-brands fa-linkedin text-lg not-italic" />
-        </IconButton>
-        <IconButton variant="text" color="pink">
-          <i className="fa-brands fa-dribbble text-lg not-italic" />
-        </IconButton>
-      </div>
+      {/*<div className="flex items-center">*/}
+      {/*  <IconButton variant="text" color="light-blue">*/}
+      {/*    <i className="fa-brands fa-twitter text-lg not-italic" />*/}
+      {/*  </IconButton>*/}
+      {/*  <IconButton variant="text" color="blue">*/}
+      {/*    <i className="fa-brands fa-linkedin text-lg not-italic" />*/}
+      {/*  </IconButton>*/}
+      {/*  <IconButton variant="text" color="pink">*/}
+      {/*    <i className="fa-brands fa-dribbble text-lg not-italic" />*/}
+      {/*  </IconButton>*/}
+      {/*</div>*/}
     </Card>
   );
 }
 
 const members = [
+  // {
+  //   img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVhbSUyMG1lbWJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+  //   name: "Tina Andrew",
+  //   title: "Founder & CEO",
+  //   desc: "Today you are you! That is truer than true! There is no one alive!",
+  // },
   {
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVhbSUyMG1lbWJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
-    name: "Tina Andrew",
-    title: "Founder & CEO",
-    desc: "Today you are you! That is truer than true! There is no one alive!",
+    img: "https://media.licdn.com/dms/image/D4E03AQHU7Nu0HSnbig/profile-displayphoto-shrink_800_800/0/1668518477502?e=2147483647&v=beta&t=xHhI0Jx70T-jDaGirtnw7xPWWgQGrCd2tPt_rfIr2Zw",
+    name: "Marita Kenrick",
+    title: "Co-founder and CEO",
+    desc: "Marita, her cancer prevention and diagnosis work, has been internationally adopted and awarded is backed by: \n" +
+        "\n" +
+        "senior roles with Public Health England managing NHS campaigns and digital products; and\n" +
+        "qualifications (MPublicHealth, BPsych (H1) & BA Marketing) in Marketing, Psychology and Public Health.\n",
   },
   {
-    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-    name: "Phoenix Baker",
-    title: "Engineering Manager",
-    desc: "And I love you like Kanye loves Kanye. We need to restart that.",
+    img: "xiao.jpg",
+    name: "Xiao Zhang",
+    title: "Co-founder and CTO",
+    desc: "Xiao is an natural language processing expert, especially speech processing. \n" +
+        "\n" +
+        "His qualifications (Mphil Speech and Language Processing, BA Computational Linguistics), software development skills and experience at Oculus and Longcheer, uniquely qualifies him to power our NLP and voice AI technologies.\n",
   },
-  {
-    img: "https://images.unsplash.com/photo-1573497491765-dccce02b29df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-    name: "Lana Steiner",
-    title: "Product Manager",
-    desc: "Artist is a term applied to a person who engages in an activity",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-    name: "Demi Wilkinson",
-    title: "Fronted Developer",
-    desc: "Success is not final, failure is not fatal: it is the courage to continue",
-  },
+  // {
+  //   img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+  //   name: "Demi Wilkinson",
+  //   title: "Fronted Developer",
+  //   desc: "Success is not final, failure is not fatal: it is the courage to continue",
+  // },
 ];
 
 export function TeamSectionOne() {
@@ -79,18 +85,19 @@ export function TeamSectionOne() {
       <div className="container mx-auto">
         <div className="mb-24 text-center">
           <Typography color="dark" className="mb-2 !font-semibold text-lg">
-            Our Team
+            Here is Alto Health
           </Typography>
           <Typography variant="h2" color="blue-gray" className="mb-4">
-            You are into a great company
+            Our team has deep expertise in health, communications, and AI
           </Typography>
           <Typography
-            variant="lead"
-            className="mx-auto lg:w-8/12 lg:px-20 text-blue-gray-800"
+              variant="lead"
+              className="mx-auto lg:w-8/12 lg:px-20 text-blue-gray-800"
           >
-            This is the paragraph where you can write more details about your
-            team. Keep you user engaged by providing meaningful information.
+            Contact Us: <a href="mailto:marita@altohealth.io" className="text-blue" style={{textDecoration: 'underline'}}>marita@altohealth.io</a>
           </Typography>
+
+
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {members.map((props, key) => (
