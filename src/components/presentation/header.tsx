@@ -12,6 +12,7 @@ import {
 export function HeroPresentation() {
  
   return (
+
     <ThemeProvider>
       <Navbar />
       <header className="h-full w-screen place-items-center bg-white relative px-8 py-8 lg:mb-36">

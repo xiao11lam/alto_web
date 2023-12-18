@@ -13,10 +13,7 @@ const { title, metaDescription } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700"
-      rel="stylesheet"
-    />
+
     <title>Alto Health</title>
     <meta name="description" content={metaDescription} />
     <meta name="generator" content={Astro.generator} />
@@ -40,9 +37,30 @@ const { title, metaDescription } = Astro.props;
     crossOrigin="anonymous"
   ></script>
 </html>
-<style is:global>
-  code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+
+<style>
+  @font-face {
+    font-family: 'MyWebFont';
+    src: url('/fonts/raisonne-book.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/raisonne-book.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/fonts/raisonne-demibold.ttf') format('truetype'); /* Safari, Android, iOS */
+  }
+
+  body {
+    font-family: 'MyWebFont', Fallback, sans-serif;
   }
 </style>
+
+
+
+<script>
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "xjdjwi2t"
+  };
+</script>
+
+<script>
+// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/xjdjwi2t'
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/xjdjwi2t';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
