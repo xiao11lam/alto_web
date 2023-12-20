@@ -145,6 +145,9 @@ const customTheme = {
       }
     },
   },
+
+
+
   navbar: {
     styles: {
       variants: {
@@ -264,6 +267,9 @@ const customTheme = {
       }
     }
   }
+
+
+
 };
 
 export function ThemeProvider({ children }: any) {
