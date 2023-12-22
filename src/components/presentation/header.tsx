@@ -33,10 +33,14 @@ export function HeroPresentation() {
               color="blue-gray"
               className="mb-8 lg:mr-32 leading-tight font-black"
             >
-              Simplifying patient <span className="text-blue">engagement and assessment</span>
+              <span className="text-blue">The simple way to engage patients and know who needs review</span>
             </Typography>
             <Typography variant="lead" color="blue-gray" className="lg:pr-32">
               Alto is the easy-to-use platform that streamlines patient engagement and assessment <span className="text-blue">through SMS and voice interaction</span>.
+            </Typography>
+
+            <Typography variant="lead" color="blue-gray" className="lg:pr-32">
+              Reducing manual administration, freeing up staff time, maximising clinical impact, and making patients happier.
             </Typography>
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
               <a href="/about">
