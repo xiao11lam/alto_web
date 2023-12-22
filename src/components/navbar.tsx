@@ -180,7 +180,7 @@ function AccountListMenu() {
 // nav list menu
 const navListMenuItems = [
   {
-    title: "Alto Voice",
+    title: "Alto NLP",
     href: "/"
   },
   // {
@@ -390,7 +390,13 @@ export default function ComplexNavbar() {
         {/*  </Button>*/}
         {/*</a>*/}
         <a href="/about">
-          <Button color="dark">Request A Demo</Button>
+          <Button color="dark">Request A Demo
+            {/*<img*/}
+            {/*    src={`iconsAlto/requestDemoIcon.svg`}*/}
+            {/*    alt="logo"*/}
+            {/*    className="w-20"*/}
+            {/*/>*/}
+          </Button>
         </a>
       </div>
       <Collapse open={isNavOpen} className="overflow-scroll">

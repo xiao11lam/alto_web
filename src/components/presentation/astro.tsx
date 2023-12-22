@@ -42,6 +42,8 @@ export function AstroSection() {
             {/*  className="h-full w-full object-cover md:absolute"*/}
             {/*/>*/}
           </div>
+
+
         </Card>
       </div>
     </section>

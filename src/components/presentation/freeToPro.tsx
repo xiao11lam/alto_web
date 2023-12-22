@@ -6,19 +6,62 @@ import {
 } from "@material-tailwind/react";
 import ThemeProvider from "../theme-provider";
 
-function StatsCard({ count, title, desc }) {
+// const logos = [
+//   "timeIcon",
+//   "satisfactionIcon",
+//   "moneyIcon",
+//   "timeIcon"
+// ];
+
+function StatsCard({ count, title, desc, icon }) {
   return (
-    <Card color="transparent" shadow={false}>
-      <Typography variant="h1" className="mb-4 text-5xl text-dark">
-        {count}
-      </Typography>
-      <Typography variant="h5" color="blue-gray">
-        {title}
-      </Typography>
-      <Typography color="gray">
-        {desc}
-      </Typography>
-    </Card>
+
+    // <Card color="transparent" shadow={false}>
+    //   {/*<Typography className="flex flex-wrap items-center justify-center gap-8">*/}
+    //   {/*    <img*/}
+    //   {/*        src={`iconsAlto/${icon}.svg`}*/}
+    //   {/*        alt="logo"*/}
+    //   {/*        className="w-40 mr-50"*/}
+    //   {/*    />*/}
+    //   {/*</Typography>*/}
+    //   <Typography variant="h1" className="mb-4 text-5xl text-dark">
+    //     {count}
+    //     <img
+    //         src={`iconsAlto/${icon}.svg`}
+    //         alt="logo"
+    //         className="w-40 mr-50"
+    //     />
+    //   </Typography>
+    //   <Typography variant="h5" color="blue-gray">
+    //     {title}
+    //   </Typography>
+    //   <Typography color="gray">
+    //     {desc}
+    //   </Typography>
+    // </Card>
+
+      <Card color="transparent" shadow={false}>
+        <Typography className="flex items-center gap-4">
+
+          <Typography variant="h1" className="text-5xl text-dark">
+            {count}
+          </Typography>
+          <img
+              src={`iconsAlto/${icon}.svg`}
+              alt="logo"
+              className="w-20"
+          />
+        </Typography>
+        <Typography variant="h5" color="blue-gray">
+          {title}
+        </Typography>
+        <Typography color="gray">
+          {desc}
+        </Typography>
+      </Card>
+
+
+
   );
 }
 
@@ -26,21 +69,25 @@ const stats = [
   {
     count: "2.5 full time staff",
     title: "Free up the time of 2.5 full time staff",
+    icon: "timeIcon"
     // desc: "From buttons, to inputs, navbars, alerts, tabels, cards or charts."
   },
   {
     count: "50%",
     title: "Increase patient satisfaction by 50%\n",
+    icon: "satisfactionIcon"
     // desc: "Save months of work when you use our pre-made pages."
   },
   {
     count: "150k",
     title: "Save 150k pa from missed appointments",
+    icon: "moneyIcon"
     // desc: "Mix the already made sections and unleash your creativity."
   },
   {
     count: "73.5%",
     title: "Reducing the hours spent on the patient journey by 73.5%",
+    icon: "staffIcon"
     // desc: "Colors, typography system, shadows, and blur effects are ready to be used."
   },
 ];
