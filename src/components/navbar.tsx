@@ -110,16 +110,16 @@ function ProfileMenu() {
 }
  
 // account pages menu
-const accountItems = [
-  {
-    title: "About Us",
-    href: "/astro-launch-ui/login"
-  },
-  {
-    title: "Sign Up",
-    href: "/astro-launch-ui/signup"
-  }
-];
+// const accountItems = [
+//   {
+//     title: "About Us",
+//     href: "/astro-launch-ui/login"
+//   },
+//   {
+//     title: "Sign Up",
+//     href: "/astro-launch-ui/signup"
+//   }
+// ];
 
 function AccountListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);

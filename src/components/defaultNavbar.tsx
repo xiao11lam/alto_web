@@ -222,11 +222,11 @@ export default function Example() {
             <NavList />
           </div>
           <div className="hidden gap-2 lg:flex">
-            <a href="./login">
-              <Button variant="text" size="sm" color="blue-gray">
-                Sign In
-              </Button>
-            </a>
+            {/*<a href="./login">*/}
+            {/*  <Button variant="text" size="sm" color="blue-gray">*/}
+            {/*    Sign In*/}
+            {/*  </Button>*/}
+            {/*</a>*/}
             <a href="/astro-launch-ui/signup">
               <Button size="sm" color="dark">
                 Sign Up

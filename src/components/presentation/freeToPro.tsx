@@ -165,10 +165,10 @@ export function FigmaPresentation() {
             {/*  All the sections and pages made with these elements will be fully responsive and will look beautiful on all types of screens, including phones, tables, or desktops.*/}
             {/*</Typography>*/}
           </div>
-          <div className="lg:flex relative">
+          <div className="lg:flex relative ">
             <div className="lg:w-1/2">
               <div className="p-2 lg:p-0 mb-8">
-                <div className="grid gap-y-16 gap-x-8 grid-cols-2 md:grid-cols-2 mb-8">
+                <div className="grid gap-y-16 gap-x-8 grid-cols-2 md:grid-cols-2 mb-8 ">
                   {stats.map((props, key) => (
                     <StatsCard key={key} {...props} />
                   ))}
