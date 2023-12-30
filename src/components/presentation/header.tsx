@@ -51,9 +51,9 @@ export function HeroPresentation() {
             </div>
           </div>
         </div>
-        {/*<div className="hidden lg:flex">*/}
-        {/*  <img src="sentiment_1.png" alt="components" className="absolute -top-0 right-20 w-1/2 " />*/}
-        {/*</div>*/}
+        <div className="hidden lg:flex">
+          <img src="header.png" alt="components" className="absolute -top-0 right-20 w-1/2 " />
+        </div>
 
 
 
