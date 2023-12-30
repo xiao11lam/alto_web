@@ -55,7 +55,7 @@ const members = [
   //   desc: "Today you are you! That is truer than true! There is no one alive!",
   // },
   {
-    img: "https://media.licdn.com/dms/image/D4E03AQHU7Nu0HSnbig/profile-displayphoto-shrink_800_800/0/1668518477502?e=2147483647&v=beta&t=xHhI0Jx70T-jDaGirtnw7xPWWgQGrCd2tPt_rfIr2Zw",
+    img: "marita.png",
     name: "Marita Kenrick",
     title: "Co-founder and CEO",
     desc: "Marita, her cancer prevention and diagnosis work, has been internationally adopted and awarded is backed by: \n" +
@@ -64,12 +64,18 @@ const members = [
         "qualifications (MPublicHealth, BPsych (H1) & BA Marketing) in Marketing, Psychology and Public Health.\n",
   },
   {
-    img: "xiao.jpg",
+    img: "xiao.png",
     name: "Xiao Zhang",
     title: "Co-founder and CTO",
     desc: "Xiao is an natural language processing expert, especially speech processing. \n" +
         "\n" +
         "His qualifications (Mphil Speech and Language Processing, BA Computational Linguistics), software development skills and experience at Oculus and Longcheer, uniquely qualifies him to power our NLP and voice AI technologies.\n",
+  },
+  {
+    img: "alice.png",
+    name: "Alicia Smirnova",
+    title: "UX Research & Design Lead",
+    desc: "Alicia is a dedicated UX/UI designer specializing in conversational AI products, driven by a passion for data-driven development and the creation of impactful applications. Currently, she is focused on optimizing the user experience for Alto's conversations, with a goal to craft inclusive, user-friendly, and efficient interactions."
   },
   // {
   //   img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",

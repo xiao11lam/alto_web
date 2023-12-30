@@ -49,7 +49,7 @@ function StatsCard({ count, title, desc, icon }) {
           <img
               src={`iconsAlto/${icon}.svg`}
               alt="logo"
-              className="w-20"
+              className="w-10"
           />
         </Typography>
         <Typography variant="h5" color="blue-gray">
@@ -67,7 +67,7 @@ function StatsCard({ count, title, desc, icon }) {
 
 const stats = [
   {
-    count: "2.5 full time staff",
+    count: "2.5 staff",
     title: "Free up the time of 2.5 full time staff",
     icon: "timeIcon"
     // desc: "From buttons, to inputs, navbars, alerts, tabels, cards or charts."
@@ -165,6 +165,9 @@ export function FigmaPresentation() {
             {/*  All the sections and pages made with these elements will be fully responsive and will look beautiful on all types of screens, including phones, tables, or desktops.*/}
             {/*</Typography>*/}
           </div>
+
+
+
           <div className="lg:flex relative ">
             <div className="lg:w-1/2">
               <div className="p-2 lg:p-0 mb-8">
