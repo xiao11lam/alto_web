@@ -27,6 +27,8 @@ export function PalettePresentation() {
               color="blue-gray"
               className="mb-8 leading-tight"
             >
+              <img src={`./iconsAlto/assesmentMedication.svg`} className="h-10 w-10 "></img>
+
               Personalised care in an overwhelmed system
             </Typography>
             <Typography color="gray" className="lg:pr-20">

@@ -9,6 +9,7 @@ import {
   ArrowSmallRightIcon,
 } from "@heroicons/react/24/outline";
 
+
 export function HeroPresentation() {
  
   return (
@@ -33,7 +34,12 @@ export function HeroPresentation() {
               color="blue-gray"
               className="mb-8 lg:mr-32 leading-tight font-black"
             >
-              <span className="text-blue">The simple way to engage patients and know who needs review</span>
+              <span className="text-blue">The simple way to engage patients and know who needs review
+
+                    <img src={`./iconsAlto/doctor.svg`} className="h-10 w-10 ">
+
+                    </img>
+              </span>
             </Typography>
             <Typography variant="lead" color="blue-gray" className="lg:pr-32">
               Alto is the easy-to-use platform that streamlines patient engagement and assessment <span className="text-blue">through SMS and voice interaction</span>.

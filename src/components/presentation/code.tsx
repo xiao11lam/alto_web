@@ -15,7 +15,7 @@ interface CategoriesCardPropsType {
     description: string
 }
 interface FeatureCardProps {
-    icon: React.ReactNode;
+    icon: string;
     title: string;
     children: React.ReactNode;
 }
@@ -43,41 +43,44 @@ function FeatureCard({ icon, title, children }: FeatureCardProps) {
     );
 }
 
+
 const features = [
     {
-        icon: <EyeIcon className="h-6 w-6" strokeWidth={2} />,
+        icon: "assesmentMedication",
         title: "Automate referrals Patient",
         // description:
         //     "For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one",
     },
     {
-        icon: (
-            <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-6" strokeWidth={2} />
-        ),
+        icon: "assesmentMedication",
         title: "Assessment Medication",
         // description:
         //     "As we live, our hearts turn colder. Cause pain is what we go through as we become older. We get insulted by others, lose trust for those others.",
     },
     {
-        icon: <BoltIcon className="h-6 w-6" strokeWidth={2} />,
+        // icon: <BoltIcon className="h-6 w-6" strokeWidth={2} />,
+        icon: "assesmentMedication",
         title: "Adherence Voice AI calls",
         // description:
             // "We get back stabbed by friends. It becomes harder for us to give others a hand. We get our heart broken by people we love.",
     },
     {
-        icon: <BoltIcon className="h-6 w-6" strokeWidth={2} />,
+        // icon: <BoltIcon className="h-6 w-6" strokeWidth={2} />,
+        icon: "assesmentMedication",
         title: "Reduce inbox notifications",
         // description:
         // "We get back stabbed by friends. It becomes harder for us to give others a hand. We get our heart broken by people we love.",
     },
     {
-        icon: <BoltIcon className="h-6 w-6" strokeWidth={2} />,
+        // icon: <BoltIcon className="h-6 w-6" strokeWidth={2} />,
+        icon: "assesmentMedication",
         title: "Automated check-ins",
         // description:
         // "We get back stabbed by friends. It becomes harder for us to give others a hand. We get our heart broken by people we love.",
     },
     {
-        icon: <BoltIcon className="h-6 w-6" strokeWidth={2} />,
+        // icon: <BoltIcon className="h-6 w-6" strokeWidth={2} />,
+        icon: "assesmentMedication",
         title: "Triage & escalation",
         // description:
         // "We get back stabbed by friends. It becomes harder for us to give others a hand. We get our heart broken by people we love.",
@@ -313,30 +316,51 @@ export function CodePresentation() {
         {/*    </div>*/}
         {/*</section>*/}
 
-        <section className="py-28 px-4">
-            <div className="container mx-auto mb-20 text-center">
-                <Typography color="dark" className="mb-2 font-bold text-lg">
-                    Features
-                </Typography>
-                <Typography variant="h2" color="blue-gray" className="mb-4">
-                    Alto offers a wide range of features for you
-                </Typography>
-                {/*<Typography*/}
-                {/*    variant="lead"*/}
-                {/*    className="mx-auto w-full px-4 text-blue-gray-800 md:w-10/12 lg:w-7/12 lg:px-8"*/}
-                {/*>*/}
-                {/*    We&apos;re constantly trying to express ourselves and actualize our*/}
-                {/*    dreams. If you have the opportunity to play*/}
-                {/*</Typography>*/}
-            </div>
-            <div className="container mx-auto grid grid-cols-1 gap-y-20 md:grid-cols-2 lg:grid-cols-3">
-                {features.map(({ icon, title, description }) => (
-                    <FeatureCard key={title} icon={icon} title={title}>
-                        {description}
-                    </FeatureCard>
-                ))}
-            </div>
-        </section>
+        {/*<section className="py-28 px-4">*/}
+        {/*    <div className="container mx-auto mb-20 text-center">*/}
+        {/*        <Typography color="dark" className="mb-2 font-bold text-lg">*/}
+        {/*            Features*/}
+        {/*        </Typography>*/}
+        {/*        <Typography variant="h2" color="blue-gray" className="mb-4">*/}
+        {/*            Alto offers a wide range of features for you*/}
+        {/*        </Typography>*/}
+        {/*        /!*<Typography*!/*/}
+        {/*        /!*    variant="lead"*!/*/}
+        {/*        /!*    className="mx-auto w-full px-4 text-blue-gray-800 md:w-10/12 lg:w-7/12 lg:px-8"*!/*/}
+        {/*        /!*>*!/*/}
+        {/*        /!*    We&apos;re constantly trying to express ourselves and actualize our*!/*/}
+        {/*        /!*    dreams. If you have the opportunity to play*!/*/}
+        {/*        /!*</Typography>*!/*/}
+        {/*    </div>*/}
+        {/*    /!*<div className="container mx-auto grid grid-cols-1 gap-y-20 md:grid-cols-2 lg:grid-cols-3">*!/*/}
+        {/*        <div className="container  grid grid-cols-2 gap-y-20 md:grid-cols-10 lg:grid-cols-3 ">*/}
+
+        {/*        /!*{features.map(({ icon, title, description }) => (*!/*/}
+        {/*        /!*    <FeatureCard key={title} icon={`./iconsAlto/${icon}.svg`} title={title}>*!/*/}
+        {/*        /!*        {description}*!/*/}
+
+        {/*        /!*    </FeatureCard>*!/*/}
+
+        {/*        /!*))}*!/*/}
+
+        {/*        {features.map(({ icon, title, description }) => (*/}
+        {/*            <img key={title} src={`./iconsAlto/${icon}.svg`} title={title} className="h-20 w-20 ">*/}
+
+        {/*            </img>*/}
+
+        {/*            // <Typography className="flex items-center">*/}
+        {/*            //     <img*/}
+        {/*            //         src={`iconsAlto/${icon}.svg`}*/}
+        {/*            //         alt="logo"*/}
+        {/*            //         className="h-20 w-10"*/}
+        {/*            //     />*/}
+        {/*            // </Typography>*/}
+
+        {/*        ))}*/}
+
+
+        {/*    </div>*/}
+        {/*</section>*/}
     </ThemeProvider>
 
 

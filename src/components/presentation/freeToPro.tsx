@@ -49,7 +49,7 @@ function StatsCard({ count, title, desc, icon }) {
           <img
               src={`iconsAlto/${icon}.svg`}
               alt="logo"
-              className="w-10"
+              className="h-10 w-10"
           />
         </Typography>
         <Typography variant="h5" color="blue-gray">

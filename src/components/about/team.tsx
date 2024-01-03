@@ -100,16 +100,16 @@ export function TeamSectionOne() {
               variant="lead"
               className="mx-auto lg:w-8/12 lg:px-20 text-blue-gray-800"
           >
-            Contact Us: <a href="mailto:marita@altohealth.io" className="text-blue" style={{textDecoration: 'underline'}}>marita@altohealth.io</a>
+            Contact Us: <a href="mailto:xiao@altohealth.io" className="text-blue" style={{textDecoration: 'underline'}}>xiao@altohealth.io</a>
           </Typography>
 
 
         </div>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {members.map((props, key) => (
-            <TeamCard key={key} {...props} />
-          ))}
-        </div>
+        {/*<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">*/}
+        {/*  {members.map((props, key) => (*/}
+        {/*    <TeamCard key={key} {...props} />*/}
+        {/*  ))}*/}
+        {/*</div>*/}
       </div>
     </section>
   );
