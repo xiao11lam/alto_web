@@ -179,10 +179,10 @@ function AccountListMenu() {
 
 // nav list menu
 const navListMenuItems = [
-  {
-    title: "Alto NLP",
-    href: "/"
-  },
+  // {
+  //   title: "Alto NLP",
+  //   href: "/"
+  // },
   // {
   //   title: "Landing Page",
   //   href: "/astro-launch-ui/landing"
@@ -220,13 +220,13 @@ function NavListMenu() {
               {...triggers}
               className="hidden items-center gap-2 text-blue-gray-900 lg:flex lg:rounded-full"
             >
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Solutions{" "}
-              <ChevronDownIcon
-                strokeWidth={2}
-                className={`h-3 w-3 transition-transform ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
-              />
+              {/*<Square3Stack3DIcon className="h-[18px] w-[18px]" /> Solutions{" "}*/}
+              {/*<ChevronDownIcon*/}
+              {/*  strokeWidth={2}*/}
+              {/*  className={`h-3 w-3 transition-transform ${*/}
+              {/*    isMenuOpen ? "rotate-180" : ""*/}
+              {/*  }`}*/}
+              {/*/>*/}
             </MenuItem>
           </Typography>
         </MenuHandler>
@@ -239,9 +239,9 @@ function NavListMenu() {
           </ul>
         </MenuList>
       </Menu>
-      <MenuItem className="flex items-center gap-2 text-blue-gray-900 lg:hidden">
-        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
-      </MenuItem>
+      {/*<MenuItem className="flex items-center gap-2 text-blue-gray-900 lg:hidden">*/}
+      {/*  <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}*/}
+      {/*</MenuItem>*/}
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
         {renderItems}
       </ul>
@@ -251,10 +251,10 @@ function NavListMenu() {
  
 // nav list component
 const navListItems = [
-  {
-    label: "Research",
-    icon: CodeBracketSquareIcon,
-  },
+  // {
+  //   label: "Research",
+  //   icon: CodeBracketSquareIcon,
+  // },
 ];
 
 

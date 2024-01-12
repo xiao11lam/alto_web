@@ -280,7 +280,7 @@ export function CodePresentation() {
                     className="mb-12 w-full opacity-80 md:w-10/12 lg:w-7/12 mx-auto px-28 z-10"
                 >
                     We connect patients and clinicians for smarter care
-                    {/*Alto’s platform offers patients easy access and guidance, and clinicians evidence-based assessment, connection and data driven decisions. Increasing adherence, reducing manual tasks and enabling you to focus on the most important patient care.*/}
+                    Alto’s platform offers patients easy access and guidance, and clinicians evidence-based assessment, connection and data driven decisions. Increasing adherence, reducing manual tasks and enabling you to focus on the most important patient care.
 
 
                 </Typography>
